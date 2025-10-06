@@ -1,0 +1,145 @@
+/* Wrapper */
+#ProductCard {
+    width: 100%;
+    padding: 80px 0;
+    background: #f9f9f9;
+}
+
+#ProductCard .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Section title */
+.section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 50px;
+    color: #111;
+    letter-spacing: 0.5px;
+}
+
+/* Grid */
+.CardBig_box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+/* Card */
+.card_box {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.4s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    border-radius: 12px;
+}
+
+.card_box:hover {
+    cursor: pointer;
+    transform: translateY(-8px);
+}
+
+/* Image wrapper */
+.image_wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.image_wrap img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.card_box:hover img {
+    transform: scale(1.08);
+}
+
+/* Gradient overlay subtle */
+.image_wrap::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60%;
+    background: linear-gradient(to top, rgba(0,0,0,0.25), transparent);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.card_box:hover .image_wrap::after {
+    opacity: 1;
+}
+
+/* Button overlay */
+.image_wrap button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #b37a4c;
+    color: #fff;
+    padding: 10px 26px;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.image_wrap button:hover {
+    background: #9a6338;
+    transform: translateX(-50%) translateY(-3px);
+}
+
+/* ============================= */
+/* RESPONSIVE STYLES */
+/* ============================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .CardBig_box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .image_wrap img {
+        height: 320px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .CardBig_box {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .image_wrap img {
+        height: 260px;
+    }
+
+    .image_wrap button {
+        font-size: 0.85rem;
+        padding: 8px 20px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 35px;
+    }
+}

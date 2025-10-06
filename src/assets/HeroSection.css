@@ -1,0 +1,9 @@
+#HeroSection
+{
+    width: 100%;
+    height: 110vh;
+    background-image: url("images/hero-bg.jpg");
+    background-position: top;
+    background-size: cover;
+    object-fit: cover;
+}
