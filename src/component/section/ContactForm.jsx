@@ -48,7 +48,7 @@ const ContactForm = () => {
                             >
                                 <i className="fa-brands fa-instagram"></i>
                             </a>
-                            <a href="https://www.instagram.com/husenov_shermat"
+                            <a href="https://www.instagram.com/xushnozametraj"
                                target="_blank"
                                rel="noopener noreferrer">
                                 <button>INSTAGRAM</button>
