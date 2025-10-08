@@ -16,7 +16,7 @@ const Navbar = () => {
                         <Menu size={20} />
                     </button>
                     <div className="info">
-                        <Clock size={18} /> Сегодня до 23:00
+                        <Clock size={18} /> Today until 11:00 PM
                     </div>
                 </div>
 
@@ -31,9 +31,9 @@ const Navbar = () => {
                 {/* RIGHT SIDE */}
                 <div className="navbar-right">
                     <button className="btn outlined">
-                        <MapPin size={18} /> Как добраться
+                        <a href="https://maps.app.goo.gl/HGqWzMWMzATutpmG7" target="_blank" rel="noopener"><MapPin size={18} /> How to get there</a>
                     </button>
-                    <div className="lang-switch">
+                    {/*<div className="lang-switch">
                         <Globe size={18} />
                         <select
                             value={lang}
@@ -44,24 +44,23 @@ const Navbar = () => {
                             <option value="UZB">UZB</option>
                             <option value="ENG">ENG</option>
                         </select>
-                    </div>
+                    </div> */}
                 </div>
             </nav>
 
             {/* SIDE MENU */}
             <div className={`side-menu ${menuOpen ? "open" : ""}`}>
                 <div className="side-menu-header">
-                    <h2>Меню</h2>
+                    <h2>Menu</h2>
                     <button className="icon-btn close" onClick={() => setMenuOpen(false)}>
                         <X size={20} />
                     </button>
                 </div>
                 <ul>
-                    <li>Главная</li>
-                    <li>О нас</li>
-                    <li>Услуги</li>
-                    <li>Новости</li>
-                    <li>Контакты</li>
+                    <li><a href="#Header">Home</a></li>
+                    <li><a href="#ProductCard">Products</a></li>
+                    <li><a href="#ProductInfo">About Us</a></li>
+                    <li><a href="#ContactForm">Contacts</a></li>
                 </ul>
             </div>
 

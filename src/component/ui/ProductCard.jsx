@@ -7,28 +7,28 @@ const ProductCard = () => {
     return (
         <section id="ProductCard">
             <div className="container">
-                <h3 className="section-title">New Collection</h3>
+                <h3 className="section-title">Matolar kolleksiyasi </h3>
 
                 <div className="CardBig_box">
 
                     <div className="card_box">
                         <div className="image_wrap">
                             <img src={img1} alt="Necklaces" />
-                            <button>Necklaces</button>
+                            <button>BLUE + SWAROVSKY</button>
                         </div>
                     </div>
 
                     <div className="card_box">
                         <div className="image_wrap">
                             <img src={img2} alt="Earrings" />
-                            <button>Earrings</button>
+                            <button>RED + SWAROVSKY</button>
                         </div>
                     </div>
 
                     <div className="card_box">
                         <div className="image_wrap">
                             <img src={img3} alt="Wedding Rings" />
-                            <button>Wedding Rings</button>
+                            <button>IZUMRUD + SWAROVSKY</button>
                         </div>
                     </div>
 

@@ -3,7 +3,7 @@ import HeroSection from "../section/HeroSection.jsx";
 
 const Header = () => {
     return (
-        <header>
+        <header id="Header">
             <Navbar />
             <HeroSection />
         </header>

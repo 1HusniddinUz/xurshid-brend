@@ -1,16 +1,17 @@
 import "../../assets/ContactForm.css";
+import logo from "../../assets/images/logo.png"
 const ContactForm = () => {
     return (
         <div id="ContactForm">
             <div className="container">
                 <div className="contactText">
                     <div className="contactInfo">
-                        <h3>contact</h3>
+                        <h3>Bog'lanish uchun</h3>
                         <p>
-                            General Manager <span>Sharipova Dilnoza</span>
+                            Bosh menejer <span>Sharipova Dilnoza</span>
                         </p>
                         <p>
-                            Phone <span>+998 (99) 124-45-58</span>
+                            Phone <span>+998 (99) 123-45-67</span>
                         </p>
                         <p>
                            Email:
@@ -27,21 +28,21 @@ const ContactForm = () => {
                     <div className="contactSocialLink">
                         <div className="link_box">
                             <a
-                                href="https://t.me/yuldashev6106"
+                                href="https://t.me/Khurshid_Kakhramonov"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <i className="fa-brands fa-telegram" target="_blank"
                                    rel="noopener noreferrer"></i>
                             </a>
-                            <a href="https://t.me/yuldashev6106" target="_blank"
+                            <a href="https://t.me/Khurshid_Kakhramonov" target="_blank"
                                rel="noopener noreferrer">
                                 <button>TELEGRAM</button>
                             </a>
                         </div>
                         <div className="link_box">
                             <a
-                                href="https://www.instagram.com/husenov_shermat"
+                                href="https://www.instagram.com/xushnozametraj"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -53,22 +54,22 @@ const ContactForm = () => {
                                 <button>INSTAGRAM</button>
                             </a>
                         </div>
-                        <div className="link_box">
-                            <a href="https://uzum.uz/uz/shop/husansher" target="_blank"
-                               rel="noopener noreferrer">
-                                <i className="fa-brands fa-yandex"></i>
-                                <button>YANDEX MARKET</button>
-                            </a>
-                        </div>
+                        {/*<div className="link_box">*/}
+                        {/*    <a href="https://uzum.uz/uz/shop/husansher" target="_blank"*/}
+                        {/*       rel="noopener noreferrer">*/}
+                        {/*        <i className="fa-brands fa-yandex"></i>*/}
+                        {/*        <button>YANDEX MARKET</button>*/}
+                        {/*    </a>*/}
+                        {/*</div>*/}
 
 
                     </div>
                 </div>
                 <div className="contactLogo">
-                    <img src="" alt="Logo"/>
+                    <img src={logo} alt="Logo"/>
                 </div>
                 <div className="contactLocation">
-                    <h3>location</h3>
+                    <h3>Joylashuv</h3>
                     <iframe
                             title="map"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191.55146678680578!2d64.43875920688576!3d39.81095143753254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f500f3192a49b83%3A0xe871868d890d6134!2z4oCcU2l0b3JhaSBNb2hpIFhvc2HigJ0gc2FuYXRvcml5c2kgfCDQodCw0L3QsNGC0L7RgNC40LkgwqvQodC40YLQvtGA0LDQuCDQnNC-0YXQuCDQpdC-0YHQsMK7!5e0!3m2!1sru!2s!4v1759816684040!5m2!1sru!2s"
