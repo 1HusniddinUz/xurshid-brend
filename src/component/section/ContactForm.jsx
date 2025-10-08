@@ -11,7 +11,7 @@ const ContactForm = () => {
                             Bosh menejer <span>Sharipova Dilnoza</span>
                         </p>
                         <p>
-                            Phone <span>+998 (99) 123-45-67</span>
+                            Phone <span><a href="tel:+998972924888" rel="noopener">+998 (97) 292-48-88</a></span>
                         </p>
                         <p>
                            Email:
