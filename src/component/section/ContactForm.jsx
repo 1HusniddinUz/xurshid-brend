@@ -17,7 +17,7 @@ const ContactForm = () => {
                            Email:
                             <span>
                 <a
-                    href="https://yuldashevjoxa007@gmail.com"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=sharipovadilnoza@gmail.com&body=Assalomu%20alaykum"
                     target="_blank"
                     rel="noopener noreferrer"
                 > sharipovadilnoza@gmail.com
