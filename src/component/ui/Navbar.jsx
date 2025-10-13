@@ -8,7 +8,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="mall-navbar">
+            <nav className="mall-navbar" id="Navbar">
                 {/* LEFT SIDE */}
                 <div className="navbar-left">
                     <button className="icon-btn" onClick={() => setMenuOpen(true)}>
