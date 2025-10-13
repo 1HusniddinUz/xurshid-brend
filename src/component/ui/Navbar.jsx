@@ -5,7 +5,6 @@ import "../../assets/Navbar.css";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [lang, setLang] = useState("RUS");
 
     return (
         <>
@@ -15,9 +14,6 @@ const Navbar = () => {
                     <button className="icon-btn" onClick={() => setMenuOpen(true)}>
                         <Menu size={20} />
                     </button>
-                    <div className="info">
-                        <Clock size={18} /> Today until 11:00 PM
-                    </div>
                 </div>
 
                 {/* LOGO CENTER */}
@@ -31,7 +27,7 @@ const Navbar = () => {
                 {/* RIGHT SIDE */}
                 <div className="navbar-right">
                     <button className="btn outlined">
-                        <a href="https://maps.app.goo.gl/HGqWzMWMzATutpmG7" target="_blank" rel="noopener"><MapPin size={18} /> How to get there</a>
+                        <a href="https://maps.app.goo.gl/HGqWzMWMzATutpmG7" target="_blank" rel="noopener"><MapPin size={18} />Yo'nalishni ko'rsatish</a>
                     </button>
                     {/*<div className="lang-switch">
                         <Globe size={18} />
@@ -57,10 +53,10 @@ const Navbar = () => {
                     </button>
                 </div>
                 <ul>
-                    <li><a href="#Header">Home</a></li>
-                    <li><a href="#ProductCard">Products</a></li>
-                    <li><a href="#ProductInfo">About Us</a></li>
-                    <li><a href="#ContactForm">Contacts</a></li>
+                    <li><a href="#Header">Bosh sahifa</a></li>
+                    <li><a href="#ProductCard">Mahsulotlar</a></li>
+                    <li><a href="#ProductInfo">Biz haqimizda</a></li>
+                    <li><a href="#ContactForm">Aloqa</a></li>
                 </ul>
             </div>
 
